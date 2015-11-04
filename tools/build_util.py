@@ -42,7 +42,6 @@ def apks_build(log, branch, type, mails):
                 print "发送邮件成功>>>>>>>>>>>>>>>>>>>>>>"
         else:
                 print "发送邮件失败>>>>>>>>>>>>>>>>>>>>>>"
-	send_mail(mails_,"打包地址",v)
 	return v
 
 def build_(root_dir, target_apk_dir, url_type, print_log_phone, print_log_car, ver_scan, apk_type, car_apk_contain_video):

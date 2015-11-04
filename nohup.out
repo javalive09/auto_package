@@ -33029,3 +33029,1717 @@ release:
 BUILD SUCCESSFUL
 Total time: 1 minute 57 seconds
 [04/Nov/2015 09:06:22] "GET /package/?type=%E6%B5%8B%E8%AF%95%E5%8C%85&log=%E6%89%93%E5%8D%B0%E6%97%A5%E5%BF%97&branch=rl_p_v1.1.0_c_v1.1.0&mail= HTTP/1.1" 200 109
+Already up-to-date.
+HEAD is now at 13aea3e 修改动画显示效果
+Switched to branch 'rl_p_v1.0.5_c_v1.0.4'
+Buildfile: /Users/peter/git/xui/CarClient/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is proguard-project.txt
+     [echo] Proguard.config is enabled
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: CarClient
+  [gettype] Project Type: Self-Tested Application
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for CarClient...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/res
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/rsObj
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/rsLibs
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/classes
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for CarClient...
+[dependency] Library dependencies:
+[dependency] 
+[dependency] ------------------
+[dependency] Ordered libraries:
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: XuiCSdk
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for XuiCSdk...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for XuiCSdk...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 14 source files to /Users/peter/git/xui/XuiCSdk/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 注: /Users/peter/git/xui/XuiCSdk/src/com/tcstudio/xuicsdk/logic/util/Utils.java使用或覆盖了已过时的 API。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+    [javac] 注: /Users/peter/git/xui/XuiCSdk/src/com/tcstudio/xuicsdk/logic/manager/IWifiManager.java使用了未经检查或不安全的操作。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+    [javac] 3 个警告
+     [echo] Creating library output jar file...
+      [jar] Building jar: /Users/peter/git/xui/XuiCSdk/bin/classes.jar
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/XuiCSdk/res
+   [crunch] To destination dir: /Users/peter/git/xui/XuiCSdk/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] 
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found modified input file
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 18 source files to /Users/peter/git/xui/CarClient/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 注: 某些输入文件使用或覆盖了已过时的 API。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+    [javac] 3 个警告
+
+-post-compile:
+
+-obfuscate:
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/proguard
+      [jar] Building jar: /Users/peter/git/xui/CarClient/bin/proguard/original.jar
+ [proguard] ProGuard, version 4.7
+ [proguard] Reading input...
+ [proguard] Reading program jar [/Users/peter/git/xui/CarClient/bin/proguard/original.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/bin/classes.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v4.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/core-3.0.0.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/zip4j_1.3.2.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Reading library jar [/Users/peter/development/sdk/platforms/android-22/android.jar]
+ [proguard] Initializing...
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'isWifiApEnabled()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean isWifiApEnabled(); }'
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'startWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean startWifi(); }'
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'stopWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean stopWifi(); }'
+ [proguard] Note: there were 2 unresolved dynamic references to classes or interfaces.
+ [proguard]       You should check if you need to specify additional program jars.
+ [proguard] Note: there were 3 accesses to class members by means of introspection.
+ [proguard]       You should consider explicitly keeping the mentioned class members
+ [proguard]       (using '-keep' or '-keepclassmembers').
+ [proguard] Note: You're ignoring all warnings!
+ [proguard] Ignoring unused library classes...
+ [proguard]   Original number of library classes: 3683
+ [proguard]   Final number of library classes:    871
+ [proguard] Printing kept classes, fields, and methods...
+ [proguard] Shrinking...
+ [proguard] Printing usage to [/Users/peter/git/xui/CarClient/bin/proguard/usage.txt]...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1818
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 138
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                40
+ [proguard]   Number of staticized methods:                35
+ [proguard]   Number of finalized methods:                 2434
+ [proguard]   Number of removed method parameters:         25
+ [proguard]   Number of inlined constant parameters:       6
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        72
+ [proguard]   Number of inlined unique method calls:       85
+ [proguard]   Number of inlined tail recursion calls:      8
+ [proguard]   Number of merged code blocks:                23
+ [proguard]   Number of variable peephole optimizations:   4476
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       31
+ [proguard]   Number of field peephole optimizations:      24
+ [proguard]   Number of branch peephole optimizations:     1875
+ [proguard]   Number of string peephole optimizations:     850
+ [proguard]   Number of simplified instructions:           239
+ [proguard]   Number of removed instructions:              749
+ [proguard]   Number of removed local variables:           76
+ [proguard]   Number of removed exception blocks:          87
+ [proguard]   Number of optimized local variable frames:   1997
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         11
+ [proguard]   Number of inlined constant parameters:       5
+ [proguard]   Number of inlined constant return values:    3
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                1
+ [proguard]   Number of variable peephole optimizations:   117
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     44
+ [proguard]   Number of string peephole optimizations:     5
+ [proguard]   Number of simplified instructions:           7
+ [proguard]   Number of removed instructions:              1776
+ [proguard]   Number of removed local variables:           65
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   23
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         5
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   6
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     4
+ [proguard]   Number of string peephole optimizations:     4
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              41
+ [proguard]   Number of removed local variables:           2
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   1
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   0
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     1
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              2
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   0
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              0
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Obfuscating...
+ [proguard] Printing mapping to [/Users/peter/git/xui/CarClient/bin/proguard/mapping.txt]...
+ [proguard] Writing output...
+ [proguard] Preparing output jar [/Users/peter/git/xui/CarClient/bin/proguard/obfuscated.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/CarClient/bin/proguard/original.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/bin/classes.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [classes.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [jackson-all-1.9.11.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v4.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v4.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/core-3.0.0.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [core-3.0.0.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/zip4j_1.3.2.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [zip4j_1.3.2.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v7-appcompat.jar:META-INF/MANIFEST.MF])
+ [proguard] Printing classes to [/Users/peter/git/xui/CarClient/bin/proguard/dump.txt]...
+
+-dex:
+      [dex] input: /Users/peter/git/xui/CarClient/bin/proguard/obfuscated.jar
+      [dex] Converting compiled files and external libraries into /Users/peter/git/xui/CarClient/bin/classes.dex...
+
+-crunch:
+   [crunch] /Users/peter/git/xui/CarClient/res/drawable-mdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/CarClient/res
+   [crunch] To destination dir: /Users/peter/git/xui/CarClient/bin/res
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-hdpi/ic_launcher.png => /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-hdpi/splash_play_normal.png => /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/splash_play_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/splash_play_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-hdpi/splash_play_press.png => /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/splash_play_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/splash_play_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-hdpi/welcome_icon.png => /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/welcome_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-hdpi/welcome_icon.png: 80% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/bing_icon.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/bing_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/bing_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/blue_point.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/blue_point.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/blue_point.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/btn_guid.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/btn_guid.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/btn_guid.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/btn_guid_press.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/btn_guid_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/btn_guid_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/car.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/car.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/car.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/chain.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/chain.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/chain.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/circle_bg.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/circle_bg.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/circle_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/close_normal.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/close_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/close_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/close_press.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/close_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/close_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/continue_img.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/continue_img.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/continue_img.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/device_error.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/device_error.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/device_error.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/disk_full.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/disk_full.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/disk_full.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/ic_launcher.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/ic_launcher.png: 15% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading1.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading1.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading2.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading2.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading2.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading3.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading3.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading3.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading4.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading4.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading4.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading5.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading5.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading5.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/loading6.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading6.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/loading6.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/phone.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/phone.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/phone.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/point_bg.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/point_bg.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/point_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/scan_code.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/scan_code.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/scan_code.png: 96% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/CarClient/res/drawable-mdpi/select_music.png => /Users/peter/git/xui/CarClient/bin/res/drawable-mdpi/select_music.png
+   [crunch]   (processed image 
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating CarClient-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+
+-release-sign:
+     [echo] Signing final apk...
+ [zipalign] Running zip align on final apk...
+     [echo] Release Package: /Users/peter/git/xui/CarClient/bin/CarClient-release.apk
+[propertyfile] Creating new property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 1 minute 43 seconds
+Buildfile: /Users/peter/git/xui/PhoneClient/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is proguard-project.txt
+     [echo] Proguard.config is enabled
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: PhoneClient
+  [gettype] Project Type: Self-Tested Application
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for PhoneClient...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/res
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/rsObj
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/rsLibs
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/classes
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for PhoneClient...
+[dependency] Library dependencies:
+[dependency] 
+[dependency] ------------------
+[dependency] Ordered libraries:
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: PhoneClient
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for PhoneClient...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for PhoneClient...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found modified input file
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 16 source files to /Users/peter/git/xui/XuiPSdk/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 注: /Users/peter/git/xui/XuiPSdk/src/com/tcstudio/xuipsdk/utils/Utils.java使用或覆盖了已过时的 API。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+    [javac] 注: /Users/peter/git/xui/XuiPSdk/src/com/tcstudio/xuipsdk/logic/manager/IWifiManager.java使用了未经检查或不安全的操作。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+    [javac] 3 个警告
+     [echo] Creating library output jar file...
+      [jar] Building jar: /Users/peter/git/xui/XuiPSdk/bin/classes.jar
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/XuiPSdk/res
+   [crunch] To destination dir: /Users/peter/git/xui/XuiPSdk/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] 
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiPSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiPSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiPSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiPSdk/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found new input file
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 90 source files to /Users/peter/git/xui/PhoneClient/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 注: 某些输入文件使用或覆盖了已过时的 API。
+    [javac] 注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+    [javac] 3 个警告
+
+-post-compile:
+
+-obfuscate:
+    [mkdir] Created dir: /Users/peter/git/xui/PhoneClient/bin/proguard
+      [jar] Building jar: /Users/peter/git/xui/PhoneClient/bin/proguard/original.jar
+ [proguard] ProGuard, version 4.7
+ [proguard] Reading input...
+ [proguard] Reading program jar [/Users/peter/git/xui/PhoneClient/bin/proguard/original.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/bin/classes.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/libs/GetuiExt-2.0.3.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/libs/android-support-v4.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiPSdk/libs/GetuiSDK2.6.1.0.jar]
+ [proguard] Reading library jar [/Users/peter/development/sdk/platforms/android-22/android.jar]
+ [proguard] Initializing...
+ [proguard] Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+ [proguard] Note: com.igexin.push.f.a: can't find dynamically referenced class android.os.ServiceManager
+ [proguard] Note: com.tcstudio.mobileclient.util.CommonUtil: can't find dynamically referenced class com.android.internal.R$dimen
+ [proguard] Note: com.tcstudio.xuipsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: com.tcstudio.xuipsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: android.support.v4.text.ICUCompatIcs accesses a method 'addLikelySubtags(java.lang.String)' dynamically
+ [proguard]       Maybe this is program method 'android.support.v4.text.ICUCompat { java.lang.String addLikelySubtags(java.lang.String); }'
+ [proguard]       Maybe this is program method 'android.support.v4.text.ICUCompat$ICUCompatImpl { java.lang.String addLikelySubtags(java.lang.String); }'
+ [proguard]       Maybe this is program method 'android.support.v4.text.ICUCompat$ICUCompatImplBase { java.lang.String addLikelySubtags(java.lang.String); }'
+ [proguard]       Maybe this is program method 'android.support.v4.text.ICUCompat$ICUCompatImplIcs { java.lang.String addLikelySubtags(java.lang.String); }'
+ [proguard]       Maybe this is program method 'android.support.v4.text.ICUCompatIcs { java.lang.String addLikelySubtags(java.lang.String); }'
+ [proguard] Note: com.igexin.download.DownloadService accesses a method 'scanFile(java.lang.String,java.lang.String)' dynamically
+ [proguard]       Maybe this is library method 'android.media.MediaScannerConnection { void scanFile(java.lang.String,java.lang.String); }'
+ [proguard] Note: com.igexin.download.e accesses a method 'asInterface(android.os.IBinder)' dynamically
+ [proguard]       Maybe this is program method 'android.support.v4.app.INotificationSideChannel$Stub { android.support.v4.app.INotificationSideChannel asInterface(android.os.IBinder); }'
+ [proguard] Note: com.igexin.download.g accesses a method 'execute(org.apache.http.client.methods.HttpUriRequest)' dynamically
+ [proguard]       Maybe this is library method 'android.net.http.AndroidHttpClient { org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest); }'
+ [proguard]       Maybe this is library method 'org.apache.http.client.HttpClient { org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest); }'
+ [proguard]       Maybe this is library method 'org.apache.http.impl.client.AbstractHttpClient { org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest); }'
+ [proguard] Note: com.tcstudio.xuipsdk.logic.manager.IWifiManager accesses a method 'isWifiApEnabled()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuipsdk.logic.manager.IWifiManager { boolean isWifiApEnabled(); }'
+ [proguard] Note: com.tcstudio.xuipsdk.logic.manager.IWifiManager accesses a method 'startWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuipsdk.logic.manager.IWifiManager { boolean startWifi(); }'
+ [proguard] Note: com.tcstudio.xuipsdk.logic.manager.IWifiManager accesses a method 'stopWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuipsdk.logic.manager.IWifiManager { boolean stopWifi(); }'
+ [proguard] Note: there were 5 unresolved dynamic references to classes or interfaces.
+ [proguard]       You should check if you need to specify additional program jars.
+ [proguard] Note: there were 7 accesses to class members by means of introspection.
+ [proguard]       You should consider explicitly keeping the mentioned class members
+ [proguard]       (using '-keep' or '-keepclassmembers').
+ [proguard] Note: You're ignoring all warnings!
+ [proguard] Ignoring unused library classes...
+ [proguard]   Original number of library classes: 3683
+ [proguard]   Final number of library classes:    1137
+ [proguard] Printing kept classes, fields, and methods...
+ [proguard] Shrinking...
+ [proguard] Printing usage to [/Users/peter/git/xui/PhoneClient/bin/proguard/usage.txt]...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2640
+ [proguard]   Final number of program classes:    2547
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 547
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                216
+ [proguard]   Number of staticized methods:                214
+ [proguard]   Number of finalized methods:                 3371
+ [proguard]   Number of removed method parameters:         113
+ [proguard]   Number of inlined constant parameters:       68
+ [proguard]   Number of inlined constant return values:    44
+ [proguard]   Number of inlined short method calls:        989
+ [proguard]   Number of inlined unique method calls:       707
+ [proguard]   Number of inlined tail recursion calls:      10
+ [proguard]   Number of merged code blocks:                38
+ [proguard]   Number of variable peephole optimizations:   7663
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       51
+ [proguard]   Number of field peephole optimizations:      34
+ [proguard]   Number of branch peephole optimizations:     2745
+ [proguard]   Number of string peephole optimizations:     1552
+ [proguard]   Number of simplified instructions:           535
+ [proguard]   Number of removed instructions:              1729
+ [proguard]   Number of removed local variables:           310
+ [proguard]   Number of removed exception blocks:          311
+ [proguard]   Number of optimized local variable frames:   2765
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2547
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                9
+ [proguard]   Number of finalized methods:                 9
+ [proguard]   Number of removed method parameters:         115
+ [proguard]   Number of inlined constant parameters:       76
+ [proguard]   Number of inlined constant return values:    44
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       12
+ [proguard]   Number of inlined tail recursion calls:      1
+ [proguard]   Number of merged code blocks:                4
+ [proguard]   Number of variable peephole optimizations:   389
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     149
+ [proguard]   Number of string peephole optimizations:     28
+ [proguard]   Number of simplified instructions:           174
+ [proguard]   Number of removed instructions:              4907
+ [proguard]   Number of removed local variables:           245
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   68
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                2
+ [proguard]   Number of finalized methods:                 1
+ [proguard]   Number of removed method parameters:         28
+ [proguard]   Number of inlined constant parameters:       18
+ [proguard]   Number of inlined constant return values:    43
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      1
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   27
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     2
+ [proguard]   Number of string peephole optimizations:     6
+ [proguard]   Number of simplified instructions:           10
+ [proguard]   Number of removed instructions:              589
+ [proguard]   Number of removed local variables:           17
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   5
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                2
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         11
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   10
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              16
+ [proguard]   Number of removed local variables:           1
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                1
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   5
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              12
+ [proguard]   Number of removed local variables:           1
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   1
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                1
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   2
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     2
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              4
+ [proguard]   Number of removed local variables:           2
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   1
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              2
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 2535
+ [proguard]   Final number of program classes:    2535
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   0
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              0
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Obfuscating...
+ [proguard] Printing mapping to [/Users/peter/git/xui/PhoneClient/bin/proguard/mapping.txt]...
+ [proguard] Writing output...
+ [proguard] Preparing output jar [/Users/peter/git/xui/PhoneClient/bin/proguard/obfuscated.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/PhoneClient/bin/proguard/original.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/bin/classes.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [classes.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [jackson-all-1.9.11.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/libs/GetuiExt-2.0.3.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [GetuiExt-2.0.3.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/libs/android-support-v4.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v4.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v7-appcompat.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiPSdk/libs/GetuiSDK2.6.1.0.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [GetuiSDK2.6.1.0.jar:META-INF/MANIFEST.MF])
+ [proguard] Printing classes to [/Users/peter/git/xui/PhoneClient/bin/proguard/dump.txt]...
+
+-dex:
+      [dex] input: /Users/peter/git/xui/PhoneClient/bin/proguard/obfuscated.jar
+      [dex] Converting compiled files and external libraries into /Users/peter/git/xui/PhoneClient/bin/classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/PhoneClient/res
+   [crunch] To destination dir: /Users/peter/git/xui/PhoneClient/bin/res
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-hdpi/default_app_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/default_app_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/default_app_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-hdpi/ic_launcher.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-hdpi/push.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/push.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-hdpi/push.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-mdpi/default_app_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/default_app_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/default_app_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-mdpi/ic_launcher.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-mdpi/push.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/push.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-mdpi/push.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/shop_status_disable.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_disable.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_disable.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/shop_status_normal.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_normal.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/shop_status_press.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_press.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/shop_status_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_selected_focused_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_selected_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_selected_pressed_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_unselected_focused_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_unselected_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-nodpi/vpi__tab_unselected_pressed_holo.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-nodpi/vpi__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xhdpi/default_app_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/default_app_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/default_app_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xhdpi/ic_launcher.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/ic_launcher.png: 74% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xhdpi/push.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/push.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xhdpi/push.png: 74% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/app_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/app_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/app_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/big_pic_default.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/big_pic_default.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/big_pic_default.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/bind_car.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/bind_car.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/bind_car.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/btn_connect.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_connect.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_connect.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/btn_shopping.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_shopping.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_shopping.png: 106% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/btn_shopping_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_shopping_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/btn_shopping_press.png: 109% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/cancel_connect.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/cancel_connect.png
+   [crunch] /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/down_back_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/down_back_press.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/cancel_connect.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/car.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/car.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/car.png: 56% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/checkbox.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/checkbox.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/checkbox.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/checkbox_select.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/checkbox_select.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/checkbox_select.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/close.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/close.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/close.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/close_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/close_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/close_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/complete.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/complete.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/complete.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/connecting_tip_one.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connecting_tip_one.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connecting_tip_one.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/connecting_tip_two.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connecting_tip_two.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connecting_tip_two.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/connectiong_tip_logo.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_logo.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_logo.png: 82% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/connectiong_tip_point.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_point.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_point.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/connectiong_tip_right.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_right.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/connectiong_tip_right.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/default_app_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/default_app_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/default_app_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/delete.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/delete.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/delete.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/delete_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/delete_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/delete_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/device_error.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/device_error.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/device_error.png: 56% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/disk_full.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/disk_full.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/disk_full.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/down_back_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/down_back_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/down_back_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/down_back_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/down_back_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/down_back_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_all_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_all_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_all_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_center.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_center.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_center.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_center_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_center_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_center_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_count_bg.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_count_bg.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_count_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_error.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_error.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_error.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_running.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_running.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_running.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/download_success.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_success.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/download_success.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/empty_content.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/empty_content.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/empty_content.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/expression.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/expression.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/expression.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/guide1.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide1.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide1.png: 97% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/guide2.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide2.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide2.png: 106% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/guide3.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide3.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/guide3.png: 92% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/home.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/home.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/home.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/ic_launcher.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/ind_expand.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ind_expand.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ind_expand.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/ind_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ind_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/ind_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/indicator_cur.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/indicator_cur.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/indicator_cur.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/indicator_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/indicator_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/indicator_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/inside_circle.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/inside_circle.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/inside_circle.png: 79% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/item_default.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/item_default.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/item_default.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/left_back_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/left_back_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/left_back_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/left_back_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/left_back_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/left_back_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/loading_music_list.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/loading_music_list.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/loading_music_list.png: 54% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/magnifier.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/magnifier.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/magnifier.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/map_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/map_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/map_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/menu.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/menu.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/menu.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/menu_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/menu_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/menu_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/more_normal.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/more_normal.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/more_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/more_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/more_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/more_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/music.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/music.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/music.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/music_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/music_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/music_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/null_file.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/null_file.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/null_file.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/okt_transfer.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/okt_transfer.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/okt_transfer.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/pause.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pause.png
+   [crunch] /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/shop_title_divider.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pause.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/pause_press.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pause_press.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pause_press.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/pending.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pending.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pending.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/phone.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/phone.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/phone.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/progress_car.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_car.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_car.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/progress_music.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_music.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_music.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/progress_phone.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_phone.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/progress_phone.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/pull_loading.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pull_loading.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/pull_loading.png: 64% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/push.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/push.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/push.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/register_finish_btn.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/register_finish_btn.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/register_finish_btn.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/retry.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/retry.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/retry.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/setting.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/setting_arrow.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting_arrow.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting_arrow.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/setting_icon.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting_icon.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/setting_icon.png: 54% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/shadow.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/shadow.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/shadow.png: 76% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/shop_title_divider.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/shop_title_divider.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/shop_title_divider.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/star_point.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/star_point.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/star_point.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/start.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/start.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/start.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/time_out.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/time_out.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/time_out.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/transfer_success.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/transfer_success.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/transfer_success.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/transfering.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/transfering.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/transfering.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable-xxhdpi/xsearch_loading.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/xsearch_loading.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable-xxhdpi/xsearch_loading.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/peter/git/xui/PhoneClient/res/drawable/album_bg.9.png => /Users/peter/git/xui/PhoneClient/bin/res/drawable/album_bg.9.png
+   [crunch]   (processed image to cache entry /Users/peter/git/xui/PhoneClient/bin/res/drawable/album_bg.9.png: 0% size of source)
+   [crunch] Crunched 102 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating PhoneClient-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+
+-release-sign:
+     [echo] Signing final apk...
+ [zipalign] Running zip align on final apk...
+     [echo] Release Package: /Users/peter/git/xui/PhoneClient/bin/PhoneClient-release.apk
+[propertyfile] Creating new property file: /Users/peter/git/xui/PhoneClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/PhoneClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/PhoneClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/PhoneClient/bin/build.prop
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 3 minutes 30 seconds
+Buildfile: /Users/peter/git/xui/CarClient/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is proguard-project.txt
+     [echo] Proguard.config is enabled
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: CarClient
+  [gettype] Project Type: Self-Tested Application
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for CarClient...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/rsObj
+    [mkdir] Created dir: /Users/peter/git/xui/CarClient/bin/rsLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for CarClient...
+[dependency] Library dependencies:
+[dependency] 
+[dependency] ------------------
+[dependency] Ordered libraries:
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.0
+ [checkenv] Installed at /Users/peter/development/sdk
+
+-setup:
+     [echo] Project Name: XuiCSdk
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.1
+     [echo] Resolving Build Target for XuiCSdk...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for XuiCSdk...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+     [echo] Creating library output jar file...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/XuiCSdk/res
+   [crunch] To destination dir: /Users/peter/git/xui/XuiCSdk/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] 
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/XuiCSdk/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found new input file
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 2 source files to /Users/peter/git/xui/CarClient/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-obfuscate:
+   [delete] Deleting: /Users/peter/git/xui/CarClient/bin/proguard/original.jar
+   [delete] Deleting: /Users/peter/git/xui/CarClient/bin/proguard/obfuscated.jar
+      [jar] Building jar: /Users/peter/git/xui/CarClient/bin/proguard/original.jar
+ [proguard] ProGuard, version 4.7
+ [proguard] Reading input...
+ [proguard] Reading program jar [/Users/peter/git/xui/CarClient/bin/proguard/original.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/bin/classes.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v4.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/core-3.0.0.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/zip4j_1.3.2.jar]
+ [proguard] Reading program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Reading library jar [/Users/peter/development/sdk/platforms/android-22/android.jar]
+ [proguard] Initializing...
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager: can't find dynamically referenced class android.net.ProxyProperties
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'isWifiApEnabled()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean isWifiApEnabled(); }'
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'startWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean startWifi(); }'
+ [proguard] Note: com.tcstudio.xuicsdk.logic.manager.IWifiManager accesses a method 'stopWifi()' dynamically
+ [proguard]       Maybe this is program method 'com.tcstudio.xuicsdk.logic.manager.IWifiManager { boolean stopWifi(); }'
+ [proguard] Note: there were 2 unresolved dynamic references to classes or interfaces.
+ [proguard]       You should check if you need to specify additional program jars.
+ [proguard] Note: there were 3 accesses to class members by means of introspection.
+ [proguard]       You should consider explicitly keeping the mentioned class members
+ [proguard]       (using '-keep' or '-keepclassmembers').
+ [proguard] Note: You're ignoring all warnings!
+ [proguard] Ignoring unused library classes...
+ [proguard]   Original number of library classes: 3683
+ [proguard]   Final number of library classes:    871
+ [proguard] Printing kept classes, fields, and methods...
+ [proguard] Shrinking...
+ [proguard] Printing usage to [/Users/peter/git/xui/CarClient/bin/proguard/usage.txt]...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1818
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 138
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                40
+ [proguard]   Number of staticized methods:                35
+ [proguard]   Number of finalized methods:                 2434
+ [proguard]   Number of removed method parameters:         25
+ [proguard]   Number of inlined constant parameters:       6
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        72
+ [proguard]   Number of inlined unique method calls:       85
+ [proguard]   Number of inlined tail recursion calls:      8
+ [proguard]   Number of merged code blocks:                23
+ [proguard]   Number of variable peephole optimizations:   4476
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       31
+ [proguard]   Number of field peephole optimizations:      24
+ [proguard]   Number of branch peephole optimizations:     1875
+ [proguard]   Number of string peephole optimizations:     850
+ [proguard]   Number of simplified instructions:           239
+ [proguard]   Number of removed instructions:              749
+ [proguard]   Number of removed local variables:           76
+ [proguard]   Number of removed exception blocks:          87
+ [proguard]   Number of optimized local variable frames:   1997
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         11
+ [proguard]   Number of inlined constant parameters:       5
+ [proguard]   Number of inlined constant return values:    3
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                1
+ [proguard]   Number of variable peephole optimizations:   117
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     44
+ [proguard]   Number of string peephole optimizations:     5
+ [proguard]   Number of simplified instructions:           7
+ [proguard]   Number of removed instructions:              1776
+ [proguard]   Number of removed local variables:           65
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   23
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         5
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   6
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     4
+ [proguard]   Number of string peephole optimizations:     4
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              41
+ [proguard]   Number of removed local variables:           2
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   1
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   0
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     1
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              2
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 1732
+ [proguard]   Final number of program classes:    1732
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                0
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         0
+ [proguard]   Number of inlined constant parameters:       0
+ [proguard]   Number of inlined constant return values:    0
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   0
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           0
+ [proguard]   Number of removed instructions:              0
+ [proguard]   Number of removed local variables:           0
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   0
+ [proguard] Obfuscating...
+ [proguard] Printing mapping to [/Users/peter/git/xui/CarClient/bin/proguard/mapping.txt]...
+ [proguard] Writing output...
+ [proguard] Preparing output jar [/Users/peter/git/xui/CarClient/bin/proguard/obfuscated.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/CarClient/bin/proguard/original.jar]
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/bin/classes.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [classes.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/jackson-all-1.9.11.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [jackson-all-1.9.11.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v4.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v4.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/core-3.0.0.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [core-3.0.0.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/zip4j_1.3.2.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [zip4j_1.3.2.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/Users/peter/git/xui/XuiCSdk/libs/android-support-v7-appcompat.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [android-support-v7-appcompat.jar:META-INF/MANIFEST.MF])
+ [proguard] Printing classes to [/Users/peter/git/xui/CarClient/bin/proguard/dump.txt]...
+
+-dex:
+      [dex] input: /Users/peter/git/xui/CarClient/bin/proguard/obfuscated.jar
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/peter/git/xui/CarClient/bin/classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/peter/git/xui/CarClient/res
+   [crunch] To destination dir: /Users/peter/git/xui/CarClient/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found modified input file
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Found modified input file
+[apkbuilder] Creating CarClient-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+
+-release-sign:
+     [echo] Signing final apk...
+ [zipalign] Running zip align on final apk...
+     [echo] Release Package: /Users/peter/git/xui/CarClient/bin/CarClient-release.apk
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+[propertyfile] Updating property file: /Users/peter/git/xui/CarClient/bin/build.prop
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 1 minute 41 seconds
+[04/Nov/2015 10:16:15] "GET /package/?type=%E6%B5%8B%E8%AF%95%E5%8C%85&log=%E6%89%93%E5%8D%B0%E6%97%A5%E5%BF%97&branch=rl_p_v1.0.5_c_v1.0.4&mail=792387725%40qq.com%2C HTTP/1.1" 200 109
+>>>>>>>>>>>>>>
+[u'792387725@qq.com']
+['develop', 'rl_p_v1.0.3_c_v1.0.4', 'rl_p_v1.0.4_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.5', 'rl_p_v1.1.0_c_v1.1.0']
+['develop', 'rl_p_v1.0.3_c_v1.0.4', 'rl_p_v1.0.4_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.5', 'rl_p_v1.1.0_c_v1.1.0']
+----------------------------------------
+Exception happened during processing of request from ('192.168.230.164', 23896)
+----------------------------------------
+['develop', 'rl_p_v1.0.3_c_v1.0.4', 'rl_p_v1.0.4_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.4', 'rl_p_v1.0.5_c_v1.0.5', 'rl_p_v1.1.0_c_v1.1.0']
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+    <!-- 接口类型  local_test, public_test, public_online -->
+
+
+
+	<string name="url_type">public_online</string>
+
+
+
+	<bool name="print_log">false</bool>
+
+
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', '\n', '    <!-- \xe6\x8e\xa5\xe5\x8f\xa3\xe7\xb1\xbb\xe5\x9e\x8b  local_test, public_test, public_online -->\n', '\n', u'\t<string name="url_type">public_test</string>\n', '\n', u'\t<bool name="print_log">true</bool>\n', '\n', '</resources>']
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<bool name="print_log">false</bool>
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', u'\t<bool name="print_log">true</bool>\n', '</resources>']
+CarClient >>>>>>>>>>>>>>>>>>>>打包完成
+PhoneClient >>>>>>>>>>>>>>>>>>打包完成
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<bool name="print_log">true</bool>
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', u'\t<bool name="print_log">true</bool>\n', '</resources>']
+CarClient >>>>>>>>>>>>>>>>>>>>打包完成
+打包总耗时>>>>>>>>>>>>>>>>>>>>>00:07:29
+[u'']
+[u'']
+{u'': (550, 'Invalid User:')}
+发送邮件失败>>>>>>>>>>>>>>>>>>>>>>
+[u'']
+{u'': (550, 'Invalid User:')}
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+    <!-- 接口类型  local_test, public_test, public_online -->
+
+
+
+	<string name="url_type">public_online</string>
+
+
+
+	<bool name="print_log">false</bool>
+
+
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', '\n', '    <!-- \xe6\x8e\xa5\xe5\x8f\xa3\xe7\xb1\xbb\xe5\x9e\x8b  local_test, public_test, public_online -->\n', '\n', u'\t<string name="url_type">public_test</string>\n', '\n', u'\t<bool name="print_log">true</bool>\n', '\n', '</resources>']
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<bool name="print_log">false</bool>
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', u'\t<bool name="print_log">true</bool>\n', '</resources>']
+CarClient >>>>>>>>>>>>>>>>>>>>打包完成
+PhoneClient >>>>>>>>>>>>>>>>>>打包完成
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<bool name="print_log">true</bool>
+
+</resources>
+['<?xml version="1.0" encoding="utf-8"?>\n', '<resources>\n', u'\t<bool name="print_log">true</bool>\n', '</resources>']
+CarClient >>>>>>>>>>>>>>>>>>>>打包完成
+打包总耗时>>>>>>>>>>>>>>>>>>>>>00:07:13
+[u'792387725@qq.com']
+[u'792387725@qq.com']
+发送邮件成功>>>>>>>>>>>>>>>>>>>>>>
+[u'792387725@qq.com']
