@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>xui打包工具</title>
+<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#sum").click(function(){
+			var type = document.getElementById("type").options[window.document.getElementById("type").selectedIndex].text
+			var log = document.getElementById("log").options[window.document.getElementById("log").selectedIndex].text
+			var branch = document.getElementById("branch").options[window.document.getElementById("branch").selectedIndex].text
+			var type_index = $("#type")[0].selectedIndex;
+			if(type_index == 0) {
+				alert("请选择打包类型");
+			}else {
+				var log_index = $("#log")[0].selectedIndex;
+				if(log_index == 0){
+					alert("请选择是否打印日志");
+				}else {
+					var branch_index = $("#branch")[0].selectedIndex;
+                       			 if(branch_index == 0) {
+                                		alert("请选择打包哪个分支");
+                        		}else {
+						var branch_index = $("#branch")[0].selectedIndex;
+                       				if(branch_index == 0) {
+                                			alert("请选择打包哪个分支");
+                        			}else {
+							var cb = document.getElementsByName("mail");
+							var s = "";
+							for(var i=0; i<cb.length; i++) {
+								if(cb[i].checked) {
+									s+=cb[i].value + ","
+								}
+							}
+							document.getElementById('result').innerHTML="</br><a>正在打包,请稍等(大概需要6分钟)...</a>"
+                                                        var b = document.getElementById("sum");
+                                                        b.disabled = !b.disabled;
+                                                        $.get("/package/",{'type':type,'log':log,'branch':branch,'mail':s}, function(ret){
+                                                                document.getElementById('result').innerHTML="</br><a href="+ ret  + "> 包地址</a>";
+                                                        })
+						}
+					}
+				}
+			}
+		});
+	});
+	window.onload = function() {
+		var type ={{ type|safe}}
+		var obj = document.getElementById("type");
+		for(var i = 0; i<type.length; i++){
+			var t = type[i];
+			obj.options.add(new Option(t,t));
+		}
+		var log = {{ log|safe}}
+		var obj = document.getElementById("log");
+		for(var i = 0; i<log.length; i++){
+			var l = log[i]
+			obj.options.add(new Option(l,l));
+		}
+		var branch = {{ branch|safe }};
+		var obj = document.getElementById("branch");
+		for(var i = 0; i<branch.length; i++){
+			var b = branch[i];
+			obj.options.add(new Option(b,b));	
+		}
+}
+</script>
+<style type="text/css">
+	body{
+		margin: 0px
+	}
+	div#container{
+		width:100%;
+		height: 100%;
+		margin-left: 20px
+	}
+	div#heading{
+		width: 100%;
+		height: 10%;
+	}
+	div#content_body{
+		width: 70%;
+		height: 30%;
+	}
+	div#mail_body{
+		width:100%;
+		height:40%;
+	}
+	div#footing{
+		width: 100%;
+		height: 10%;
+	}
+	select{
+		font-size:15pt
+	}
+	button{
+		width: 100px;
+		height: 30px;
+		font-size: 15pt
+	}
+</style>
+</head>
+
+<body>
+
+<div id = "container">
+	<div id="heading" align="center" textsize="25">
+		<h1> xui 打包工具</h1>
+	</div>
+	<div id="content_body">
+		<h2>打包设置：</h2>
+		<select id="type">
+		  <option value="type">类型</option>
+		</select>
+
+		<select id="log">
+		  <option value="log">日志</option>
+		</select>
+
+		<select id="branch">
+		<option value="branch">分支</option>
+		</select>
+	</div>
+	<div id="mail_body">
+	<h2>发送邮件给：</h2>
+	<input type="checkbox" name="mail" value="17502616@qq.com">andrs<br/>
+	<input type="checkbox" name="mail" value="570177105@qq.com">张绅乐<br/>
+	<input type="checkbox" name="mail" value="1023251767@qq.com">罒G+<br/>
+	<input type="checkbox" name="mail" value="1543305912@qq.com">★ IMOONSTAR<br/>
+	<input type="checkbox" name="mail" value="17993437@qq.com">悟者<br/>
+	<input type="checkbox" name="mail" value="382148256@qq.com">peak<br/>
+	<input type="checkbox" name="mail" value="792387725@qq.com">Peter<br/>
+	
+	</div>
+	<div id="footing">
+	<h2>打包：</h2>
+	<button type="button" id="sum" >开始打包</button>
+	<p>result: <span id='result'></span></p>
+	</div>
+	<div id = "result">
+	</div>
+</div>
+  
+</body>
+</html>
+
