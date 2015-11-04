@@ -1,1 +1,3 @@
 # auto_package
+基于django框架使用python和ant实现的服务器自动打包程序
+
