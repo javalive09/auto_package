@@ -8,7 +8,7 @@ mail_user="javalive09"    #用户名
 mail_pass="jfzgnrqzrofsdosb"   #口令
 mail_postfix="126.com"  #发件箱的后缀
 
-def apks_build(log, branch, type, mails):
+def apks_build(mix, log, branch, type, mails):
 	start = time.time()
 	src = '/Users/peter/git/xui/BuildTools/src/ant.properties'
 	config = ConfigParser.RawConfigParser()
@@ -16,15 +16,18 @@ def apks_build(log, branch, type, mails):
 	s = config.sections()
 	root_dir = config.get(s[0],'root.dir')
 	target_apk_dir = config.get(s[0],'target.apk.dir')
-	
-	time_name = time.strftime('%Y-%m-%d-%X', time.localtime())
+
+	time_name = time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))
 	os.chdir(target_apk_dir)
-	dir_name = 'time-' + time_name + "_log-" + log  + "_urltype-" + type + "_branch-" + branch
+	dir_name = 'time-' + time_name + "_mix-" + mix  + "_log-" + log  + "_urltype-" + type + "_branch-" + branch
 	os.system('mkdir ' + dir_name)
 	target_apk_dir = target_apk_dir + '/' + dir_name
 	
 	checkout_branch(branch, root_dir)
 	clean_bin(root_dir)
+
+        modify_car_mix(root_dir, mix)
+        modify_phone_mix(root_dir, mix)
 
 	#phone_hp 同时打包car_novideo, phone_normal
 	build_(root_dir, target_apk_dir, type, log, log, 'false', 'phone_contain_car', 'false')
@@ -499,7 +502,55 @@ def update_car_assert(root_dir):
 def test_str():
 	return "123"
 
+def modify_phone_mix(root_dir, mix):
+	'''修改 phone project.properties 打开或屏蔽混淆'''
+	old=open(root_dir + "/PhoneClient/project.properties")
+	try:
+		lines=old.readlines()
+	finally:
+		old.close()
+	
+	if mix == 'true':
+		newlines=[]
+		for line in lines:
+			if 'proguard.config=proguard-project.txt' in line:
+				if '#' in line:
+					line = 'proguard.config=proguard-project.txt\n'
+			newlines.append(line)
+	elif mix == 'false':
+		newlines=[]
+		for line in lines:
+			if 'proguard.config=proguard-project.txt' in line:
+				line = '#proguard.config=proguard-project.txt\n'
+			newlines.append(line)
+	new=open(root_dir + "/PhoneClient/project.properties","w")
+	new.writelines(newlines)
+	new.close()
 
+def modify_car_mix(root_dir, mix):
+	'''修改 car project.properties 打开或屏蔽混淆'''
+	old=open(root_dir + "/CarClient/project.properties")
+	try:
+		lines=old.readlines()
+	finally:
+		old.close()
+	
+	if mix == 'true':
+		newlines=[]
+		for line in lines:
+			if 'proguard.config=proguard-project.txt' in line:
+				if '#' in line:
+					line = 'proguard.config=proguard-project.txt\n'
+			newlines.append(line)
+	elif mix == 'false':
+		newlines=[]
+		for line in lines:
+			if 'proguard.config=proguard-project.txt' in line:
+				line = '#proguard.config=proguard-project.txt\n'
+			newlines.append(line)
+	new=open(root_dir + "/CarClient/project.properties","w")
+	new.writelines(newlines)
+	new.close()
 
 def open_folder(target_apk_dir):
 	'''打开目标文件夹'''

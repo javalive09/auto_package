@@ -7,11 +7,15 @@
 <script>
 	$(document).ready(function(){
 		$("#sum").click(function(){
+			var mix = document.getElementById("mix").options[window.document.getElementById("mix").selectedIndex].text
 			var type = document.getElementById("type").options[window.document.getElementById("type").selectedIndex].text
 			var log = document.getElementById("log").options[window.document.getElementById("log").selectedIndex].text
 			var branch = document.getElementById("branch").options[window.document.getElementById("branch").selectedIndex].text
 			var type_index = $("#type")[0].selectedIndex;
-			if(type_index == 0) {
+			var mix_index = $("#mix")[0].selectedIndex;
+			if(mix_index == 0) {
+				alert("请选择是否快速打包");
+			}else if(type_index == 0) {
 				alert("请选择打包类型");
 			}else {
 				var log_index = $("#log")[0].selectedIndex;
@@ -33,10 +37,16 @@
 									s+=cb[i].value + ","
 								}
 							}
-							document.getElementById('result').innerHTML="</br><a>正在打包,请稍等(大概需要6分钟)...</a>"
-                                                        var b = document.getElementById("sum");
+							var mix_index = $("#mix")[0].selectedIndex;
+							if(mix_index == 1) {
+								document.getElementById('result').innerHTML="</br><a>正在打包,请稍等(大概需要6分钟)...</a>"
+							}else {
+								document.getElementById('result').innerHTML="</br><a>正在打包,请稍等(大概需要1分钟)...</a>"
+							}
+                                                        
+							var b = document.getElementById("sum");
                                                         b.disabled = !b.disabled;
-                                                        $.get("/package/",{'type':type,'log':log,'branch':branch,'mail':s}, function(ret){
+                                                        $.get("/package/",{'mix':mix,'type':type,'log':log,'branch':branch,'mail':s}, function(ret){
                                                                 document.getElementById('result').innerHTML="</br><a href="+ ret  + "> 包地址</a>";
                                                         })
 						}
@@ -46,6 +56,12 @@
 		});
 	});
 	window.onload = function() {
+		var mix ={{ mix|safe}}
+                var obj = document.getElementById("mix");
+                for(var i = 0; i<mix.length; i++){
+                        var t = mix[i];
+                        obj.options.add(new Option(t,t));
+                }
 		var type ={{ type|safe}}
 		var obj = document.getElementById("type");
 		for(var i = 0; i<type.length; i++){
@@ -110,6 +126,9 @@
 	</div>
 	<div id="content_body">
 		<h2>打包设置：</h2>
+		<select id="mix">
+		  <option value="mix">快速</option>
+		</select>
 		<select id="type">
 		  <option value="type">类型</option>
 		</select>
